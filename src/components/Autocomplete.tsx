@@ -32,8 +32,6 @@ const Autocomplete = <T extends { [key: string]: any }>({
   onInputChange,
   filterOptions,
 }: AutocompleteProps<T>) => {
-  const [inputValue, setInputValue] = useState<string>("");
-
   const valueMap = new Map<string, T>();
 
   const selectOptions = isStringArray(options)
